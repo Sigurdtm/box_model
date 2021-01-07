@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="nb">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box model</title>
+   
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <style>
+        main {
+            font-family: 'Lato', sans-serif;
+            /* slik legger man til kommentar i css */
+            display: flex;
+            /* flex brukes til å plassere innhold */
+            flex-wrap: wrap;
+            /*flex-wrap brukes til å pakke innholdet der hvor det 
+            er plass dyttes ting opp og der det ikke er plass dyttes det ned */ 
+
+            /* brukes for å sentrere innhold*/
+            justify-content: center;
+            align-content: center;
+            max-width: 2000px;
+            background-color: rgb(197, 252, 252);
+            min-height: 400px;
+            margin: 40px;
+            padding: 20px;
+            border: rgba(8, 104, 121, 0.993) solid 2px;
+        }
+
+        div {
+            max-width: 300px;
+            margin: 40px;
+            padding: 20px;
+            border:rgba(8, 104, 121, 0.993) solid 2px;
+            background-color: rgb(148, 233, 219);
+
+        }
+        .Overskrift {background-color: lavender;}
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="Overskrift">
+            <h1>
+            Forklaringer CSS/HTML</h1>
+            
+        </div>
+
+        <div class="html">
+            <h2>Kommentar i HTML</h2>
+            <p>Krokodilletegn utenfor denne teksten
+                ! -- Slik kommenterer man i HTML-- !
+            </p>
+        </div>
+
+        <div class="Kommentar">
+            <h2>Kommentar i CSS</h2>
+            <p>/* slik legger man til kommentar i css*/
+            </p>
+        </div>
+
+        <div class="Linker">
+            <h2>Skrive linker</h2>
+            <p>skriv a og trykk enter
+                href="link her"
+                </p>
+        </div>
+
+        <div class="Bilder">
+            <h2>Legge til bilder</h2>
+            <p> Skriv img og trykk enter
+                Bildet du skal legge inn må ligge i samme mappe som html-dokumentet ditt
+                Skriv inn filnavnet i img src="filnavn her". 
+                alt="" er hva som vil stå hvis bildet ikke laster inn
+                
+
+            </p>
+        </div>
+
+        <div class="Bakgrunnsfarg">
+            <h2>Bakgrunnsfarge</h2>
+            <p>Skriv: background-color: og så kommer det forslag til fargevalg.
+            </p>
+        </div>
+
+        <div class="HTML">
+            <h2>Main i HTML</h2>
+            <p>Main er hvor man har innholdet av dokumentet. Kan ikke være mer enn en main.
+            </p>
+        </div>
+
+        <div class="hex-verdi">
+            <h2>Farging med hex-verdi</h2>
+            <p>Velg hva du vil farge med f.eks background-color:
+                Skriv # og 3-6 tall med verdien 0-9, eller bokstavene a-f.
+                0 er mørkest og f er lysest
+                f.eks: #ffffff (hvit), #000000 (svart) 
+                 </p>
+        </div>
+
+        <div class="rgb-verdi">
+            <h2>Farging med rgb-verdi</h2>
+            <p> Skriv rgb(96, 168, 168) 
+                (verdien til fargen i parantes)
+                </p>
+        </div>
+
+        <div class="flexbox">
+            <h2> Hva brukes flexbox i CSS til</h2>
+            <p>Flexbox gjør det lettere å designe layout på nettsiden. Mer effektiv måte å plassere “Align” osv. Funker bra selv om størrelser er ukjente og/eller dynamisk. </p>
+        </div>
+
+    </main>
+</body>
+
+</html>
